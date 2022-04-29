@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnClickMe = findViewById<Button>(R.id.mybutton)
         val btnClickMe2 = findViewById<Button>(R.id.mybutton2)
+        val btnClickMe3 = findViewById<Button>(R.id.resetcounter)
         val tvMyTextView = findViewById<TextView>(R.id.textView)
         var timesClicked = 0
         btnClickMe.setOnClickListener { //increase counter
@@ -24,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             timesClicked -= 1
             tvMyTextView.text = timesClicked.toString();
             Toast.makeText(this, "Decreased!", Toast.LENGTH_LONG).show()
+        }
+        btnClickMe3.setOnClickListener{
+            timesClicked = 0
+            tvMyTextView.text = timesClicked.toString();
         }
 
     }
