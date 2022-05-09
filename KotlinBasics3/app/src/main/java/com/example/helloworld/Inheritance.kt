@@ -54,6 +54,19 @@ class ElectricCar(name: String, brand: String, batteryLife: Double, maxSpeed: Do
     }
 }
 
+//Abstract Classes:
+// An abstract class cannot be instantiated
+// (you cannot create objects of an abstract class).
+//However, you can inherit subclasses from an abstract class.
+// The members (properties and methods) of an abstract class are non-abstract
+// unless you explicitly use the abstract keyword to make them abstract.
+
+//Differences Between Interface and Abstract class:
+//Interfaces cannot have fields
+//We can extend only one class, and implement multiple interfaces
+//Abstract Classes have constructors
+
+
 fun main(){
     var AudiA3 = car1("A3", "Audi", 200.0)
     var TeslaS = ElectricCar("s-Model", "Tesla", 85.0, 200.0)
